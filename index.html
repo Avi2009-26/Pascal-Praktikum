@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css file should be included like this  -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<body>
+          
+                <h1>Bestellformular</h1>
+
+        <!-- This is form with classname and id  -->
+
+  <div class ="mainform">
+        <form class="submitform" action="#greeting-modal" id="submitform" method="get">
+
+
+            <div class="firstpart">
+                <label for="fname"> Vorname:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname"> Nachname:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email"> E-Mail:</label><br>
+
+                <input type="email" id="email" name="email" required><br>
+                <label for="dob"> Geburtsdatum:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+
+                <label for="adresse">Adresse:</label><br>
+                <input type="text" id="adresse" name="adresse" required><br>
+
+            </div>
+
+            <!-- This is with the options -->
+
+            <div class="secondpart">
+
+                <label for="city"> Stadt:</label><br>
+                <input type="text" id="city" name="city" required> <br>
+                <label for="bundesland"> Bundesland:</label><br>
+                <select name="bundesland" required>
+                    <option value="" selected disabled> Bitte auswählen </option>
+                    <option value="=Ba-Wü">Baden Württemberg</option>
+                    <option value="bayern">Bayern</option>
+                    <option value="hamburg">Hamburg</option>
+                    <option value="berlin"> Berlin</option><br>
+
+
+                </select>
+                <br>
+                <label for="postleitzahl">Postleitzahl: </label><br>
+                <input type="number" id="postleitzahl" name="postleitzahl" required> <br>
+
+
+
+                <label for="tel">Telefon:</label><br>
+                <input type="number" id="tel" name="tel" required><br>
+
+
+            </div>
+
+
+            <div class=thirdpart>
+
+                <p> <strong> Produkt(e):</strong> </p>
+                <input type="checkbox" id="Iphone 16 pro" required>
+                <label for="Iphone 16 pro">Iphone 16 pro(1200$)</label>
+                <input type="checkbox" id="Iphone 17 pro">
+                <label for="Iphone 17 pro"> Iphone 17 pro(1400$)</label>
+                <br>
+
+                <br>
+                <p><strong>Farbe:</strong> </p>
+                <input type="checkbox" id="schwarz" required>
+                <label for="schwarz">Schwarz</label>
+                <input type="checkbox" id="weiß">
+                <label for="weiß">Weiß</label>
+                <br>
+
+            </div>
+
+
+            <div class="fourthpart">
+
+                <p><strong>Type der kreditkarte:</strong></p>
+                <input type="checkbox" id="mastercard" required>
+                <label for="mastercard">Mastercard</label>
+                <input type="checkbox" id="visa">
+                <label for="visa">Visa</label>
+                <input type="checkbox" id="americanexpress">
+                <label for="american express">American Express</label>
+                <br>
+                <br>
+                <label for="karteninhaber">Karteninhaber:</label>
+                <input type="text" id="karteninhaber" required>
+                <br>
+                <br>
+                <label for="nummerderkreditkarte">Nummer der kreditkarte</label>
+                <input type="number" id="nr_kreditkarte" required>
+                <br>
+                <br>
+                <label for="gültig bis">Gültig bis</label>
+                <input type="date" id="gültig_bis" required>
+                <br>
+                <br>
+
+            </div>
+
+
+
+
+            <button type="submit">Submit</button>
+
+
+
+
+
+
+
+        </form>
+
+
+        <!-- Modal container -->
+        <div class="modal-container" id="greeting-modal">  
+            <div class="modal">
+                <h3>Danke für die Einsendnung!</h3>
+                <p>Ihr Formular wurde korrekt ausgefüllt! Sie erhalten dazu Informationen per E-Mail.</p>
+            </div>
+
+            <!-- Background, click to close -->
+            <a href="#" class="modal-bg"></a>
+        </div>
+
+
+    </div>
+</body>
+
+
+
+</html>
+</body>
+
+
+
+
+
+</div>
